@@ -1,0 +1,185 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans";
+}
+
+header{
+    background-image: url(../images/Header\ Background\ Mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 24px;
+    padding-top: 69px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+
+    
+}
+
+.informacoes-header{
+    
+    gap: 24px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+header h1{
+    font-family: 'Luckiest Guy';
+    color: #FFFFFF;
+    font-size: 2rem;
+    width: 278px;
+    font-weight: 400px;
+    line-height: 32px;
+}
+
+header p{
+    
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 21.79px;
+    width: 381px;
+    color: #FFFFFF;
+    max-width: 100%;
+}
+
+header button{
+
+    width: 100%;
+    height: 54px;
+    border-radius: 28px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 21.79px;
+    border: 0;
+}
+
+.header-botoes{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.button-windows{
+    color: #23272A;
+    background-color: #FFFFFF;
+}
+
+.button-navegador{
+    background-color: #23272A;
+    color: #FFFFFF;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 27px;
+    max-width: 100%;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.conteudo-reverse{
+    background-color: #F6F6F6;
+}
+
+.conteudo h2, .conteudo-reverse h2{
+    color: #23272A;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 32.68px;
+}
+
+section p{
+    color: #23272A;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 21.79px;
+}
+
+.final{
+    background-color: #F6F6F6;
+}
+
+.final h2{
+    color: #23272A;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: "Luckiest Guy";
+}
+
+footer{
+    background-color: #23272A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+}
+
+
+
+
+@media screen and (min-width: 583px){
+    header{
+        background-image: url(../images/Header\ Background\ Desktop.png);
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        
+    }
+
+    header button{
+        width: 50%;
+    }
+
+    .header-botoes{
+        flex-direction: row;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section img{
+        width: 50%;
+    }
+
+    .conteudo{
+        flex-direction: row;
+    }
+
+    .conteudo-reverse{
+        flex-direction: row-reverse;
+        
+    }
+
+    .conteudo h2, .conteudo-reverse h2{
+        font-size: 2.5rem;
+        font-weight: 800;
+        line-height: 54.47px;
+    }
+
+    .descricao{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
